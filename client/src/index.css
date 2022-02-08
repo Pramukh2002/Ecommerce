@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+}
+.Header,
+.Footer {
+  background: #131921;
+  padding: 10px 15px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.TitleName {
+  width: 15%;
+}
+.ProductsBtnCol,
+.SignInBtnCol,
+.SignUpBtnCol,
+.OrderDetailsBtnCol,
+.CartBtnCol,
+.UserCol {
+  width: 10%;
+  text-align: center;
+}
+.CartBtnCol > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.CartBtnCol #CartQuan {
+  position: absolute;
+  top: 1px;
+  font-family: Calibri;
+  color: #f08804;
+}
+.SearchFullCol {
+  width: 50%;
+}
+.SearchMainCol {
+  display: flex;
+  border: 1px solid gray;
+  background: white;
+  border-radius: 3px;
+}
+.SearchMainCol input,
+.SearchMainCol button {
+  margin: 0;
+  border: none;
+  background: transparent;
+  padding: 5px 5px;
+}
+#SearchTextCol {
+  width: calc(100% - 30px);
+}
+#SearchBtn {
+  width: 30px;
+}
+.UserIcon {
+  width: 25px;
+  height: 25px;
+  padding: 1px;
+  background: white;
+  border-radius: 15px;
+}
+.Required:after {
+  content: "*";
+  color: red;
+}
+#LogoutBtn {
+  color: red;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  padding: 5px;
+  border-radius: 15px;
+  background: white;
+  cursor: pointer;
+}
+
+.SignInForm,
+.SignUpForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 15px;
+}
+.SignInForm > form,
+.SignUpForm > form {
+  width: 350px;
+  box-shadow: 0 0 2px black;
+  padding: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.SignInForm .SignInTitle,
+.SignUpForm .SignUpTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+.SignIn_InnerCols,
+.SignUp_InnerCols {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0 0 0;
+}
+.SignIn_InnerCols > span,
+.SignUp_InnerCols > span {
+  margin: 0 0 3px 0;
+}
+.SignInForm input,
+.SignUpForm input {
+  font-size: 13px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 6px 5px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.Orders_MainDiv {
+  min-height: 250px;
+  box-shadow: 0 0 1px black;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #eaeded;
+  transition: 0.5s;
+  display: flex;
+  align-items: flex-start;
+}
+.OrdersProductsListMainCol {
+  width: 100%;
+  margin: 0 0 0 0;
+  background: white;
+  height: fit-content;
+  padding: 15px;
+}
+.OrdersProductsListMainCol > h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+.Orders_ProductDiv {
+  display: flex;
+  padding: 5px;
+  color: black;
+  border-bottom: 1px solid gray;
+}
+.Orders_ProductDiv .Orders_ProductImgCol {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Orders_ProductDiv .Orders_ProductImgCol img {
+  height: 110px;
+}
+.Orders_ProductDiv .Orders_ProductDetailsCol {
+  width: calc(85% - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Orders_ProductDiv .Orders_ProductPriceCol {
+  width: 100px;
+  text-align: center;
+  font-size: 20px;
+  font-family: Calibri;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.Orders_ProductDiv .Orders_ProductPriceCol > i {
+  font-size: 13px;
+  position: relative;
+  top: -2px;
+}
+.Cart_MainDiv {
+  min-height: 250px;
+  box-shadow: 0 0 1px black;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #eaeded;
+  transition: 0.5s;
+  display: flex;
+  align-items: flex-start;
+}
+.CartProductsListMainCol {
+  width: 75%;
+  margin: 0 0 0 0;
+  background: white;
+  height: fit-content;
+  padding: 15px;
+}
+.CartProductsListMainCol > h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+.Cart_ProductDiv {
+  display: flex;
+  padding: 5px;
+  color: black;
+  border-bottom: 1px solid gray;
+}
+.Cart_ProductDiv .Cart_ProductImgCol {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Cart_ProductDiv .Cart_ProductImgCol img {
+  height: 110px;
+}
+.Cart_ProductDiv .Cart_ProductDetailsCol {
+  width: calc(85% - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Cart_ProductDiv .Cart_ProductPriceCol {
+  width: 100px;
+  text-align: right;
+  font-size: 20px;
+  font-family: Calibri;
+  font-weight: bold;
+}
+.Cart_ProductDiv .Cart_ProductPriceCol > i {
+  font-size: 13px;
+  position: relative;
+  top: -2px;
+}
+.CartTotalMainCol {
+  width: 25%;
+  margin: 0 0 0 20px;
+  background: white;
+  height: fit-content;
+}
+
+.Footer {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  justify-content: center;
+}
+.Button {
+  font-size: 15px;
+  font-family: Calibri;
+  background: navy;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 6px 35px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+p {
+  margin: 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+  height: auto;
+  display: block;
+}

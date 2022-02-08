@@ -1,0 +1,124 @@
+.Display_ProductDiv {
+  min-height: 250px;
+  width: 100%;
+  box-shadow: 0 0 1px black;
+  padding: 10px;
+  box-sizing: border-box;
+  background: white;
+  transition: 0.5s;
+  display: flex;
+  align-items: flex-start;
+}
+.Display_ProductDiv .Display_ProductImgCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 10px 0;
+  width: 50%;
+}
+.Display_ProductDiv > img {
+  max-height: 700px;
+  max-width: 100%;
+}
+.Display_ProductDiv .Display_ProductsDetailsCol {
+  margin: 0 0 10px 0;
+  width: 50%;
+  position: relative;
+}
+.Display_ProductName {
+  font-family: Calibri;
+  color: #0f1111;
+  font-size: 28px;
+}
+.Display_PriceCol {
+  margin: 10px 0;
+  font-size: 19px;
+  font-family: Calibri;
+}
+#Display_ProductAmt {
+  color: #b12704;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 0 0 0 8px;
+}
+#Display_ProductAmt > i {
+  font-size: 16px;
+  top: -1px;
+  position: relative;
+}
+.Display_Widgets {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid gray;
+  padding: 5px 0;
+}
+.Display_Widget {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Display_Widget > img {
+  width: 40px;
+  height: 40px;
+}
+.Display_Widget > span {
+  font-size: 14px;
+  font-family: Calibri;
+}
+.Display_Description {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  font-family: Calibri;
+  padding: 10px;
+  text-align: justify;
+  border-bottom: 1px solid gray;
+}
+.Display_ProductInformation {
+  font-size: 17px;
+  font-family: Calibri;
+  padding: 10px;
+}
+#Display_ProductInfoRows tr:nth-child(1) td {
+  border-top: 1px solid gray;
+}
+#Display_ProductInfoRows tr td:nth-child(1) {
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background: #e5e5e59c;
+  width: 40%;
+  vertical-align: top;
+}
+#Display_ProductInfoRows tr td:nth-child(2) {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  width: 60%;
+  vertical-align: top;
+}
+.AddToCartBtnCol {
+  position: absolute;
+  right: 15px;
+}
+#AddToCartBtn {
+  margin: 4px 0 0 0;
+  padding: 7px 19px;
+  background: #008010;
+  display: none;
+}
+#AddToCartBtn > i {
+  margin-right: 10px;
+}
+.AddedToCartMsg {
+  font-size: 15px;
+  font-family: Calibri;
+  border: 1px solid #008010;
+  color: navy;
+  border-radius: 15px;
+  padding: 6px 14px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
